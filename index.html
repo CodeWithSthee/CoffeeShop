@@ -50,10 +50,10 @@
                     </li>
                 </ul>
 
-                <form action="" class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+                <div class="cart" id="cart">
+                    <a href=""><i class='bx bx-cart-alt'></i></a>
+                </div>
 
             </div>
         </div>
@@ -65,8 +65,8 @@
     <section id="home">
         <div class="content">
             <h3>Start Your Day With a <br> Fresh Coffee</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, Reiciendis, labore
-                <br> ipsum dolor sit amet consectetur.
+            <p>Indulge in the rich aroma and flavors that will set the perfect tone for your day.<br>
+                Visit us today and savor the joy in every sip.
             </p>
             <button id="btn">Shop Now</button>
 
@@ -82,7 +82,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="images/about_bg.jpg" alt="">
+                        <img src="images/black_bg.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -309,11 +309,11 @@
         <div class="container" id="container3">
             <div class="row">
                 <div class="col-md-3 py-3 py-3">
-                    <div class="card">
+                    <div class="card" >
                         <img src="images/p1.jpg" alt="">
                         <div class="card-body">
                             <h3>Cappuccino Coffee</h3>
-                            <p>R150 <strike>175</strike> <span class="bx bxs-cart"></span></p>
+                            <p>R150 <strike>R175</strike> <span class="bx bxs-cart"></span></p>
                         </div>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
                         <img src="images/p2.jpg" alt="">
                         <div class="card-body">
                             <h3>Decaf Coffee</h3>
-                            <p>R150 <strike>175</strike> <span class="bx bxs-cart"></span></p>
+                            <p>R140 <strike>R165</strike> <span class="bx bxs-cart"></span></p>
                         </div>
                     </div>
                 </div>
@@ -333,7 +333,7 @@
                         <img src="images/p3.jpg" alt="">
                         <div class="card-body">
                             <h3>Italian Coffee</h3>
-                            <p>R150 <strike>175</strike> <span class="bx bxs-cart"></span></p>
+                            <p>R100 <strike>R125</strike> <span class="bx bxs-cart"></span></p>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@
                         <img src="images/p4.jpg" alt="">
                         <div class="card-body">
                             <h3>Jacobs Coffee</h3>
-                            <p>R150 <strike>175</strike> <span class="bx bxs-cart"></span></p>
+                            <p>R250 <strike>R275</strike> <span class="bx bxs-cart"></span></p>
                         </div>
                     </div>
                 </div>
@@ -351,6 +351,8 @@
         </div>
     </section>
     <!--product section end-->
+
+
 
 
 
@@ -403,12 +405,13 @@
 
     <!--contact section start-->
     <section id="contact">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-md-7">
                     <div class="heading6">Contact <span>Us</span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, Reiciendis, labore
-                        <br> ipsum dolor sit amet consectetur.
+                    <p>Feel free to drop us a line using the contact form below,
+                        and one of our coffee enthusiasts will get back to you as soon as possible.
+                        We love connecting with fellow coffee lovers and can't wait to assist you on your coffee journey.
                     </p>
                     <input type="text" class="form-control" placeholder="Full Names" aria-label="default input example"><br>
                     <input type="email" class="form-control" placeholder="Email Address" aria-label="default input example"><br>
@@ -420,8 +423,6 @@
                     <h1>Info</h1>
                     <p><i class='bx bx-envelope'>smcoffee@gmail.com</i></p>
                     <p><i class='bx bxs-phone'>+27711173432</i></p>
-                    <p><i class='bx bxl-instagram'>sm_coffeeshop</i></p>
-                    <p><i class='bx bxl-facebook'>smcoffeeshop</i></p>
                     <p><i class='bx bx-current-location'>329 Ketjen Street Pretoria West</i></p>
                 </div>
             </div>
@@ -440,13 +441,14 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="review-header">
-                            <span class="reviewer-name">Sabrina K.</span>
-                            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            <span class="reviewer-name">Shakinah K.</span>
+                            <span class="stars"  data-rating="4">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                         </div>
                         <p class="customer-review">
-                            Aleksandr was fantastic! He came with all the equipment to do the job, even the hardware I didn't know I would need. He hung a heavy chandelier perfectly and fixed a cabinet to our wall. 100% would hire.
-                        </p>
-                        <h5>21 February 2023</h5>
+                            "There's potential in this coffee shop, but it has some areas to work on.
+                            The coffee could be better, and the atmosphere lacks a bit of character.
+                            With a few tweaks, it could elevate to a higher rating."                        </p>
+                        <h6>21 February 2024</h6>
 
                     </div>
                 </div>
@@ -454,13 +456,15 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="review-header">
-                            <span class="reviewer-name">Sabrina K.</span>
-                            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            <span class="reviewer-name">Smith J.</span>
+                            <span class="stars"  data-rating="5">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                         </div>
                         <p class="customer-review">
-                            Aleksandr was fantastic! He came with all the equipment to do the job, even the hardware I didn't know I would need. He hung a heavy chandelier perfectly and fixed a cabinet to our wall. 100% would hire.
+                            "A great coffee spot with almost everything you'd want. The coffee is excellent,
+                            and the ambiance is cozy. It just falls shy of a perfect score,
+                            but it's definitely a go-to place for a reliably good cup."
                         </p>
-                        <h5>21 February 2023</h5>
+                        <h6>21 January 2024</h6>
 
                     </div>
                 </div>
@@ -468,13 +472,15 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="review-header">
-                            <span class="reviewer-name">Sabrina K.</span>
-                            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            <span class="reviewer-name">Shabalala N.</span>
+                            <span class="stars"  data-rating="5">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                         </div>
                         <p class="customer-review">
-                            Aleksandr was fantastic! He came with all the equipment to do the job, even the hardware I didn't know I would need. He hung a heavy chandelier perfectly and fixed a cabinet to our wall. 100% would hire.
-                        </p>
-                        <h5>21 February 2023</h5>
+                            "The coffee here is undeniably great, and the staff is friendly.
+                            However, there's a bit of room for improvement,
+                            maybe in terms of some unique offerings or more diverse seating options.
+                            Overall, a solid choice."                        </p>
+                        <h6>20 January 2024</h6>
 
                     </div>
                 </div>
@@ -486,12 +492,14 @@
                     <div class="card">
                         <div class="review-header">
                             <span class="reviewer-name">Sabrina K.</span>
-                            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            <span class="stars"  data-rating="4.5">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                         </div>
                         <p class="customer-review">
-                            Aleksandr was fantastic! He came with all the equipment to do the job, even the hardware I didn't know I would need. He hung a heavy chandelier perfectly and fixed a cabinet to our wall. 100% would hire.
+                            "Consistency is the key here. The coffee is consistently good,
+                            and the service is reliable. While it may not have the 'wow' factor for a perfect score,
+                            it's a dependable choice for your daily caffeine fix."
                         </p>
-                        <h5>21 February 2023</h5>
+                        <h6>11 February 2024</h6>
 
                     </div>
                 </div>
@@ -499,13 +507,15 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="review-header">
-                            <span class="reviewer-name">Sabrina K.</span>
-                            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            <span class="reviewer-name">Mohammed K.</span>
+                            <span class="stars"  data-rating="5">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                         </div>
                         <p class="customer-review">
-                            Aleksandr was fantastic! He came with all the equipment to do the job, even the hardware I didn't know I would need. He hung a heavy chandelier perfectly and fixed a cabinet to our wall. 100% would hire.
-                        </p>
-                        <h5>21 February 2023</h5>
+                            "As a coffee enthusiast, I'm always on the lookout for the perfect cup,
+                            and this place delivers! The coffee is consistently well-brewed,
+                            striking a perfect balance of strength and smoothness.
+                            A great place to enjoy a quiet moment with your favorite brew."                        </p>
+                        <h6>03 January 2024</h6>
 
                     </div>
                 </div>
@@ -513,13 +523,14 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <div class="review-header">
-                            <span class="reviewer-name">Sabrina K.</span>
-                            <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            <span class="reviewer-name">Mkhwebane Z.</span>
+                            <span class="stars"  data-rating="5">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                         </div>
                         <p class="customer-review">
-                            Aleksandr was fantastic! He came with all the equipment to do the job, even the hardware I didn't know I would need. He hung a heavy chandelier perfectly and fixed a cabinet to our wall. 100% would hire.
-                        </p>
-                        <h5>21 February 2023</h5>
+                            "The coffee at this shop is nothing short of a masterpiece.
+                            Every sip takes me on a journey of rich flavors and aromatic bliss.
+                            The baristas truly understand the art of brewing. Highly recommend their specialty blends!"                        </p>
+                        <h6>05 February 2024</h6>
 
                     </div>
                 </div>
@@ -534,7 +545,6 @@
 
     <!--footer start-->
     <footer id="footer">
-        <div class="footer-logo text-center"><img src="images/Coffee-Shop-Logo.png" alt=""></div>
         <div class="social-links text-center">
             <i class='bx bxl-facebook'></i>
             <i class='bx bxl-twitter'></i>
@@ -543,23 +553,21 @@
             <i class='bx bxl-pinterest'></i>
         </div>
         <div class="credits text-center">
-            Designed By <a href="#">codewithsthee</a>
+            Designed By <a href="#"><span>CodeWithSthee</span></a>
         </div>
 
         <div class="copyright text-center">
-            &copy: Copyright <strong> <span>Coffee Shop</span></strong>.All Rights reserved
+            &copy Copyright <strong> <span>Coffee Shop</span></strong>.All Rights reserved
         </div>
     </footer>
     <!--footer end-->
 
-    <a href=""><i class='bx bx-up-arrow-alt'></i></a>
-
-
-
-
+    <a href="" class="arrow"  id="scrollToTop" ><i class='bx bx-up-arrow-alt'></i></a>
 
 </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -49,10 +49,13 @@ html ::-webkit-scrollbar{
     color: black;
 }
 
-.navbar form button{
-    background: black;
-    color: white;
-    border: 1px solid white;
+.navbar .cart{
+    font-size: 35px;
+    margin-right: 55px;
+}
+
+.cart i{
+    color: black;
 }
 
 /*navbar end*/
@@ -98,7 +101,42 @@ html ::-webkit-scrollbar{
     background: #b2744c;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    #home .content {
+        padding-top: 150px;
+        margin-left: 20px;
+    }
+
+    #home .content h3 {
+        font-size: 40px;
+    }
+
+    #btn {
+        width: 120px;
+        height: 32px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home .content {
+        padding-top: 100px;
+        margin-left: 10px;
+    }
+
+    #home .content h3 {
+        font-size: 30px;
+    }
+
+    #btn {
+        width: 100px;
+        height: 28px;
+        margin-top: 10px;
+    }
+}
 /*home section end*/
+
 
 
 /*about section start*/
@@ -117,6 +155,7 @@ html ::-webkit-scrollbar{
     color: black;
     font-size: 30px;
     font-weight: bold;
+    border-bottom: 2px solid #b2744c;
 }
 
 .heading span{
@@ -124,11 +163,15 @@ html ::-webkit-scrollbar{
 }
 
 #about .card{
+    padding: 0;
     border-radius: 10px;
 }
 
 #about .card img{
-    height: 360px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border: none;
     border-radius: 10px;
 }
 
@@ -137,7 +180,7 @@ html ::-webkit-scrollbar{
         height: 36px;
         margin-top: 20px;
         background: transparent;
-    color: #b2744c;
+        color: #b2744c;
         border:2px solid #b2744c;
         border-radius: 5px;
         font-weight: bold;
@@ -150,24 +193,51 @@ html ::-webkit-scrollbar{
         color: white;
 }
 
-@media screen and(max-width: 928px) {
-    #about p{
-        font-size: 8px;
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    #about .card img {
+        height: 250px;
+    }
+
+    #about-btn {
+        width: 120px;
+        height: 32px;
+        margin-top: 15px;
     }
 }
-@media screen and(max-width: 766px) {
-    #about p{
-        font-size: 15px;
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+        margin-bottom: 20px;
     }
-    #about{
-        height: 120vh;
+
+    #about .container {
+        padding-top: 50px;
+    }
+
+    #about .card img {
+        height: 200px;
+    }
+
+    #about-btn {
+        width: 100px;
+        height: 28px;
+        margin-top: 10px;
     }
 }
 /*about section end*/
 
+
+
 /*top-card start*/
 #top-cards{
     width: 100%;
+    margin-top: 50px;
     /*height: 60vh;*/
     background: #f7f5f2;
 }
@@ -177,6 +247,7 @@ html ::-webkit-scrollbar{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    margin-top: 60px;
 }
 
 .heading2 span{
@@ -188,6 +259,7 @@ html ::-webkit-scrollbar{
 }
 
 #top-cards .card{
+    padding: 0;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
@@ -201,24 +273,50 @@ html ::-webkit-scrollbar{
 #top-cards .card:hover{
     transform: translateY(-10px);
 }
+@media screen and (max-width: 768px) {
+    #top-cards .container {
+        /*margin-top: 70px;*/
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media screen and (max-width: 928px) {
-    #top-cards .card img {
-        height: auto;
+    #top-cards .heading2 {
+        margin-top: 250px;
+        margin-bottom: 20px;
+    }
+
+    #top-cards {
+        padding-bottom: 50px;
     }
 }
 
-
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 480px) {
     .heading2 {
         font-size: 24px;
+        margin-top: 250px;
+        margin-bottom: 20px;
     }
 
-    #top-cards .card img {
-        height: auto;
+    #top-cards .card {
+        width: 100%;
+        margin: 10px 0;
     }
 }
-/*top-card end*/
+
+@media screen and (max-width:350px) {
+    .heading2 {
+        font-size: 20px;
+        margin-top: 350px;
+        margin-bottom: 20px;
+    }
+
+    #top-cards .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
 
 /*menu start*/
 #menu{
@@ -239,10 +337,13 @@ html ::-webkit-scrollbar{
 }
 
 #menu .card{
+    border-radius: 10px;
+    padding: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #menu .card img{
+    border-radius: 10px;
     height: 250px;
 }
 
@@ -261,6 +362,10 @@ html ::-webkit-scrollbar{
     font-size: 16px;
     color: #b2744c;
     padding-top: 10px;
+}
+
+#menu strike{
+    color: red;
 }
 
 #menu p span{
@@ -302,6 +407,10 @@ html ::-webkit-scrollbar{
     padding-top: 10px;
 }
 
+#product strike{
+    color: red;
+}
+
 #product p span{
     float: right;
     font-size: 20px;
@@ -322,6 +431,7 @@ html ::-webkit-scrollbar{
     font-size: 30px;
     font-weight: bold;
     margin-top: 60px;
+    border-bottom: 2px solid #b2744c;
 }
 
 .heading5 span{
@@ -329,11 +439,13 @@ html ::-webkit-scrollbar{
 }
 
 #gallery .card{
+    padding: 0;
     cursor: pointer;
     border-radius: 10px;
 }
 
 #gallery .card img{
+    border-radius: 10px;
     height: 300px;
 }
 /*gallery end*/
@@ -436,10 +548,11 @@ html ::-webkit-scrollbar{
 
 .heading7 {
     text-align: center;
-    margin-top: 110px;
+    margin-top: 60px;
     color: black;
     font-size: 30px;
     font-weight: bold;
+
 }
 
 .heading7 span{
@@ -469,11 +582,117 @@ html ::-webkit-scrollbar{
 }
 
 .stars {
-    color: #FFD700; /* Set the color of the stars */
+    color: #FFD700;
     font-size: 20px;
 }
 
 .customer-review {
-    /* Add your styling for the customer review text here */
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading7 {
+        font-size: 25px;
+        margin-top: 140px;
+    }
+
+    .stars {
+        font-size: 18px;
+    }
+
+    .customer-review {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading7 {
+        font-size: 20px;
+        margin-top: 170px;
+    }
+
+    .stars {
+        font-size: 16px;
+    }
+
+    .customer-review {
+        font-size: 12px;
+    }
 }
 /*review end*/
+
+
+
+/*footer start*/
+#footer{
+    width: 100%;
+    background: #b2744c;
+    margin-top: 50px;
+}
+
+.social-links i{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links i:hover{
+    background: #b2744c;
+    color: black;
+}
+
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.credits a span{
+    color: black;
+}
+
+.copyright span{
+    color: black;
+}
+/*footer end*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    font-size: 35px;
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+
+.arrow.active {
+    display: block; /* Show the arrow when it becomes active */
+}
+
+@media screen and (max-width: 768px) {
+    .arrow {
+        right: 20px;
+        bottom: 20px;
+    }
+}
