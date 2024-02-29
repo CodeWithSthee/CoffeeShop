@@ -28,8 +28,9 @@ html ::-webkit-scrollbar{
 
 #logo img{
     border-radius: 10px;
-    width: 160px;
-    margin-left: 40px;
+    width: 120px;
+    color: white;
+    margin-left: 50px;
 }
 
 .navbar-nav{
@@ -146,7 +147,7 @@ html ::-webkit-scrollbar{
 }
 
 #about .container{
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 .heading{

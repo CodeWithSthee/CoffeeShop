@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body{
+    background-image: url("../images/g6.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 730px;
+}
+
+.login-container{
+    height: 550px;
+    width: 30%;
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0px 50px black;
+}
+
+h1{
+    text-align: center;
+    font-size: 44px;
+    margin-top: -10px;
+    color: #b2744c;
+    font-style: italic;
+}
+
+input[type='email'],input[type='password'],input[type='text'],input[type='submit']{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+input::placeholder{
+    color: #b2744c;
+}
+
+input:hover{
+    border: 2px solid black;
+    background: transparent;
+    box-shadow: 8px 8px 30px black;
+}
+
+input[type='submit']{
+    font-weight: bold;
+    transition: .4s ease-in-out;
+    font-size: 15px;
+    letter-spacing: 6px;
+}
+
+input[type='submit']:hover{
+    background: #b2744c;
+    font-weight: bold;
+    color: whitesmoke;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 8px 8px 20px black;
+}
+
+.value{
+    margin-top: 2rem;
+}
+
+.bxs-user{
+    position: absolute;
+    top: 8.9rem;
+    font-size: 22px;
+    left: 20rem;
+    color: #b2744c;
+}
+
+.bxs-lock{
+    position: absolute;
+    top: 18rem;
+    font-size: 22px;
+    left: 20rem;
+    color: #b2744c;
+}
+
+.bxs-envelope{
+    position: absolute;
+    top: 13.5rem;
+    font-size: 22px;
+    left: 20rem;
+    color: #b2744c;
+}
+
+a{
+    font-size: 13px;
+    margin-top: 5px;
+    color: #b2744c;
+    padding-top: 12px;
+    margin-left: 10rem;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.signup{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 13px;
+}
+
+.signup p {
+    display: inline-block;
+    margin: 0;
+}
+
+.signup a {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.signup a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.also-login{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.also-login p{
+    color: black;
+    font-size: 13px;
+}
+
+.also-login .icon{
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #b2744c;
+    cursor: pointer;
+}
+
+.also-login .icon i:hover{
+    color: white;
+}
